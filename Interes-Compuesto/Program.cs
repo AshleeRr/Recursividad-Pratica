@@ -15,7 +15,7 @@
             decimal TasaInteresAnual = decimal.Parse(Console.ReadLine()!);
 
             decimal montoAcumulado = CalcularMontoTotalAcumulado(capitalInicial, TasaInteresAnual, tiempo);
-            Console.WriteLine("Monto total acumulado: " + Math.Round(montoAcumulado,2));
+            Console.WriteLine("Monto total acumulado: " + Math.Round(montoAcumulado, 2));
         }
 
         static decimal CalcularMontoTotalAcumulado(decimal m, decimal x, int n)

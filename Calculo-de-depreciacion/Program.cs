@@ -5,12 +5,12 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Ingrese los datos:");
-            Console.WriteLine("Cantidad de años");
+            Console.WriteLine("Cantidad de años:");
             int tiempo = ValidarTiempo(int.Parse(Console.ReadLine()!));
 
-            Console.WriteLine("tasa de depreciacion anual");
+            Console.WriteLine("tasa de depreciacion anual:");
             decimal tasa = decimal.Parse(Console.ReadLine()!);
-            Console.WriteLine("costo original del producto");
+            Console.WriteLine("costo original del producto:");
             decimal costoOriginal = decimal.Parse(Console.ReadLine()!);
              
             decimal valorActual  = SaldoDecreciente(tiempo, tasa, costoOriginal);
@@ -28,7 +28,7 @@
 
         static int ValidarTiempo(int t)
         {
-            if (t > 0)
+            if (t >= 0)
                 return t;
 
             Console.WriteLine("La cantidad de tiempo no puede ser negativa");
